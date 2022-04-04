@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 
 const primary_color = "#6f2f94"
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
       flex: 1,
       flexDirection: 'column',

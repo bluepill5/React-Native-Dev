@@ -28,8 +28,12 @@ export default function App() {
 
   const onHandlerComplete = id => {
     console.log('Complete item');
-    setListItem(currentItems => currentItems.map(item => {item.value = "hi"}));
+    // TODO-DO
+    // setListItem(currentItems => currentItems.map(item => {item.value = "hi"}));
+    // setItemSelected({});
+    setListItem(currentItems => currentItems.filter(item => item.id !== id));
     setItemSelected({});
+    setModalVisible(!modalVisible);
   }
 
   const onHandlerDelete = id => {
